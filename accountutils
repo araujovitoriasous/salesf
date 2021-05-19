@@ -1,0 +1,9 @@
+#BillingState
+
+public class AccountUtils {
+	public static List<Account> accountsByState (string States)
+    {
+        List<Account> a = [SELECT ID,NAME FROM Account WHERE BillingState=:States]; 
+        return a;
+    }
+}
